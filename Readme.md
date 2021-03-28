@@ -6,3 +6,8 @@
 docker-compose up --build
 docker-compose exec app bash
 ```
+
+## Run tests  
+```bash
+go test ./...
+```
