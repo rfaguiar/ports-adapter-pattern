@@ -32,7 +32,7 @@ type ProductReader interface {
 }
 
 type ProductWriter interface {
-	Save(name string, price float64) (ProductInterface, error)
+	Save(product ProductInterface) (ProductInterface, error)
 }
 
 type ProductPersistenceInterface interface {
