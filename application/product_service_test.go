@@ -1,7 +1,8 @@
-package application
+package application_test
 
 import (
 	"github.com/golang/mock/gomock"
+	"github.com/rfaguiar/ports-adapter-pattern/application"
 	mock_application "github.com/rfaguiar/ports-adapter-pattern/application/mocks"
 	"github.com/stretchr/testify/require"
 	"testing"
@@ -15,7 +16,7 @@ func TestProductService_Get(t *testing.T) {
 	persistence := mock_application.NewMockProductPersistenceInterface(ctrl)
 	persistence.EXPECT().Get(gomock.Any()).Return(product, nil).AnyTimes()
 
-	service := ProductService{
+	service := application.ProductService{
 		Persistence: persistence,
 	}
 
