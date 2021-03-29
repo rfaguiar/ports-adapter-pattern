@@ -11,3 +11,8 @@ docker-compose exec app bash
 ```bash
 go test ./...
 ```
+
+## Generate mocks
+```bash
+mockgen -destination=application/mocks/application.go -source=application/product.go application
+```
