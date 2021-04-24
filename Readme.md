@@ -16,3 +16,18 @@ go test ./...
 ```bash
 mockgen -destination=application/mocks/application.go -source=application/product.go application
 ```
+
+## enter SqLiteDb
+```bash
+sqlite3 sqlite.db
+```
+
+```sqlite
+create table products(id string, name string, price float, status string);
+.tables
+select * from products;
+```
+
+```bash
+go run main.go
+```

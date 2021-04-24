@@ -73,5 +73,4 @@ func TestProductDb_Save(t *testing.T) {
 	require.Equal(t, product.GetName(), productResult.GetName())
 	require.Equal(t, product.GetPrice(), productResult.GetPrice())
 	require.Equal(t, product.GetStatus(), productResult.GetStatus())
-
 }
