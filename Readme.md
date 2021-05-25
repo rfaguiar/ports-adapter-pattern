@@ -17,8 +17,17 @@ go test ./...
 mockgen -destination=application/mocks/application.go -source=applrun main.goication/product.go application
 ```
 
+## Initialize cobra configs  
 ```bash
-cobra init --pkg-name=github.com/rfaguiar/ports-adapter-pattern/application
+cobra init --pkg-name=github.com/rfaguiar/ports-adapter-pattern
+cobra add cli
+```
+## Run main cobra cmds  
+```bash
+go run main.go cli
 ```
 
-
+## refresh mod libs
+```bash
+go mod tidy
+```
