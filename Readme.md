@@ -14,20 +14,11 @@ go test ./...
 
 ## Generate mocks
 ```bash
-mockgen -destination=application/mocks/application.go -source=application/product.go application
-```
-
-## enter SqLiteDb
-```bash
-sqlite3 sqlite.db
-```
-
-```sqlite
-create table products(id string, name string, price float, status string);
-.tables
-select * from products;
+mockgen -destination=application/mocks/application.go -source=applrun main.goication/product.go application
 ```
 
 ```bash
-go run main.go
+cobra init --pkg-name=github.com/rfaguiar/ports-adapter-pattern/application
 ```
+
+
