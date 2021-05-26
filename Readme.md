@@ -31,3 +31,13 @@ go run main.go cli
 ```bash
 go mod tidy
 ```
+## connect sqlite db
+```bash
+sqlite3 db.sqlite
+```
+
+## create table products
+```sqlite
+create table products(id string, name string, price float, status string);
+select * from products;
+```
