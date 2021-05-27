@@ -41,3 +41,7 @@ sqlite3 db.sqlite
 create table products(id string, name string, price float, status string);
 select * from products;
 ```
+## Run main cobra http webserver
+```bash
+go run main.go http
+```
